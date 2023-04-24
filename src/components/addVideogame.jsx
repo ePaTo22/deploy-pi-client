@@ -137,7 +137,7 @@ export default function AddVideogame() {
 
     axios
       .post(
-        "https://videogames-pi-patricio.herokuapp.com/api/videogame/",
+        "https://videogames-pi-pat.fly.dev/api/videogame/",
         input
       )
       .then(() => {

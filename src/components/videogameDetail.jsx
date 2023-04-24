@@ -11,7 +11,7 @@ export default function Videogame() {
 
   useEffect(() => {
     axios
-      .get(`https://videogames-pi-patricio.herokuapp.com/api/videogame/${id}`)
+      .get(`https://videogames-pi-pat.fly.dev/api/videogame/${id}`)
       .then((result) => {
         setVideogame(result.data);
       });
