@@ -13,7 +13,7 @@ export const DELETE_GAME = "DELETE_GAME";
 export function axiosVideogames() {
   return function (dispatch) {
     axios
-      .get("https://videogames-pi-patricio.herokuapp.com/api/videogame")
+      .get("https://videogames-pi-pat.fly.dev/api/videogame")
       .then((videogames) => {
         dispatch({
           type: AXIOS_VIDEOGAMES,
@@ -31,7 +31,7 @@ export function searchVideogames(search) {
   return function (dispatch) {
     axios
       .get(
-        "https://videogames-pi-patricio.herokuapp.com/api/videogame?name=" +
+        "https://videogames-pi-pat.fly.dev/api/videogame?name=" +
           search
       )
       .then((videogames) => {
@@ -49,7 +49,7 @@ export function searchVideogames(search) {
 export function getGenre() {
   return function (dispatch) {
     axios
-      .get(`https://videogames-pi-patricio.herokuapp.com/api/genre`)
+      .get(`https://videogames-pi-pat.fly.dev/api/genre`)
       .then((genres) => {
         dispatch({ type: GET_GENRE, payload: genres.data });
       })
@@ -62,7 +62,7 @@ export function getGenre() {
 export function getPlatforms() {
   return function (dispatch) {
     axios
-      .get(`https://videogames-pi-patricio.herokuapp.com/api/videogame`)
+      .get(`https://videogames-pi-pat.fly.dev/api/videogame`)
       .then((platforms) => {
         dispatch({
           type: GET_PLATFORMS,
